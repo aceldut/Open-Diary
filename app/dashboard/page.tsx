@@ -1,8 +1,12 @@
+import CreateDiaryForm from '@/components/auth/CreateDiaryForm';
+import Wrapper from '@/components/global/Wrapper';
 import React from 'react';
 
-const page = () => {
+const page = (): React.ReactElement => {
     return ( 
-        <div>DASHBOARD</div>
+        <Wrapper title='DASHBOARD'>
+            <CreateDiaryForm />
+        </Wrapper>
     )
 }
 

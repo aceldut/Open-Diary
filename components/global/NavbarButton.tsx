@@ -4,7 +4,7 @@ import { useUser, SignIn } from '@clerk/nextjs';
 import Link from "next/link"
 import { UserButton } from '@clerk/nextjs'
 
-const NavbarButton = () => {
+const NavbarButton = ():React.ReactElement => {
     const { isLoaded, isSignedIn } = useUser();
     
     if (!isLoaded) return <p>please wait...</p>;
