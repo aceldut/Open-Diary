@@ -1,17 +1,17 @@
-import React, { ReactElement } from 'react'
+import React from "react";
 
-type ParamsProps ={
-    title: string;
-    children?: ReactElement;
-}
+type ParamsProps = {
+  title?: string;
+  children?: React.ReactElement;
+};
 
-const Wrapper = ({ title, children }: ParamsProps): ReactElement => {
+const Wrapper = ({ title, children }: ParamsProps): React.ReactElement => {
   return (
-    <section className='container mx-auto px-4 '>
-        <h1 className='text-center text-xl mb-8'>{title}</h1>
-        {children}
+    <section className="container mx-auto px-4">
+      <h1 className="text-center text-xl mb-8">{title}</h1>
+      {children}
     </section>
-  )
-}
+  );
+};
 
-export default Wrapper
+export default Wrapper;

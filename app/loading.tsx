@@ -1,14 +1,14 @@
-import Wrapper from '@/components/global/Wrapper'
-import React from 'react'
+import Wrapper from "@/components/global/Wrapper";
+import React from "react";
 
 const loading = () => {
   return (
-    <Wrapper title='Loading'>
-        <div className='flex justify-center items-center'>
+    <Wrapper title="Loading">
+      <div className="flex justify-center items-center">
         <span className="loading loading-dots loading-lg"></span>
-        </div>
+      </div>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default loading
+export default loading;
